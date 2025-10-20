@@ -679,76 +679,69 @@ label {
     transform: translateX(0);
   }
 }
-/* ========= RESPONSIVE MOBILE ========= */
+/* ========== MOBILE RESPONSIVE (Layout A: giữ bố cục, chỉ thu nhỏ) ========== */
 @media (max-width: 768px) {
   .container,
   .body-letter,
   #castle {
-    height: auto;
-    padding: 20px 0;
+    height: 100vh;
+    padding: 0;
   }
 
   svg {
-    width: 95% !important;
+    width: 100% !important;
+    height: auto !important;
   }
 
   .envelope {
-    width: 240px;
-    height: 160px;
+    transform: scale(0.8);
   }
 
-  .card {
-    width: 220px;
-    height: 130px;
-    left: 10px;
+  .valentines,
+  .shadow,
+  .hearts {
+    transform: scale(0.75);
   }
 
-  .text {
-    font-size: 22px;
-    left: 60px;
-  }
-
-  .heart {
-    left: 85px;
-  }
-
-  .shadow {
-    width: 250px;
-    left: 0;
-  }
-
-  /* Phần khung letter popup */
-  .formLetter {
-    width: 90%;
-    height: auto;
+  .wrapperLetterForm .formLetter {
+    width: 95% !important;
+    height: auto !important;
   }
 
   .wrapperLetter {
     flex-direction: column;
-    gap: 10px;
-    padding: 15px 5px;
-  }
-
-  .letterLeft {
-    align-items: center;
+    gap: 12px;
+    padding: 10px;
   }
 
   .letterImage {
-    width: 120px;
+    width: 120px !important;
   }
 
   .textLetter h2 {
-    font-size: 24px;
+    font-size: 22px !important;
   }
 
   .textLetter .contentLetter {
-    font-size: 16px;
-    padding: 0 10px;
+    font-size: 16px !important;
+    padding: 0 10px !important;
+  }
+}
+
+/* ========== MOBILE NHỎ HƠN 480PX (iPhone SE, Android nhỏ) ========== */
+/* ========== MOBILE NHỎ HƠN 480PX (iPhone SE, Android nhỏ) ========== */
+@media (max-width: 480px) {
+  .envelope {
+    transform: scale(0.65);
   }
 
-  .fa-xmark {
-    font-size: 22px;
-    top: 10px;
-    right: 10px;
+  .valentines,
+  .shadow,
+  .hearts {
+    transform: scale(0.6);
+  }
+
+  .letterImage {
+    width: 100px !important;
   }
 }
