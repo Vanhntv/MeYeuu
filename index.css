@@ -679,3 +679,76 @@ label {
     transform: translateX(0);
   }
 }
+/* ========= RESPONSIVE MOBILE ========= */
+@media (max-width: 768px) {
+  .container,
+  .body-letter,
+  #castle {
+    height: auto;
+    padding: 20px 0;
+  }
+
+  svg {
+    width: 95% !important;
+  }
+
+  .envelope {
+    width: 240px;
+    height: 160px;
+  }
+
+  .card {
+    width: 220px;
+    height: 130px;
+    left: 10px;
+  }
+
+  .text {
+    font-size: 22px;
+    left: 60px;
+  }
+
+  .heart {
+    left: 85px;
+  }
+
+  .shadow {
+    width: 250px;
+    left: 0;
+  }
+
+  /* Phần khung letter popup */
+  .formLetter {
+    width: 90%;
+    height: auto;
+  }
+
+  .wrapperLetter {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px 5px;
+  }
+
+  .letterLeft {
+    align-items: center;
+  }
+
+  .letterImage {
+    width: 120px;
+  }
+
+  .textLetter h2 {
+    font-size: 24px;
+  }
+
+  .textLetter .contentLetter {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .fa-xmark {
+    font-size: 22px;
+    top: 10px;
+    right: 10px;
+  }
+}
